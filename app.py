@@ -16,9 +16,6 @@ genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 
 
-
-
-
 def get_pdf_text(pdf_docs):
     text=""
     for pdf in pdf_docs:
@@ -26,7 +23,6 @@ def get_pdf_text(pdf_docs):
         for page in pdf_reader.pages:
             text+= page.extract_text()
     return  text
-
 
 
 def get_text_chunks(text):
@@ -61,7 +57,6 @@ def get_conversational_chain():
     return chain
 
 
-
 def user_input(user_question):
     embeddings = GoogleGenerativeAIEmbeddings(model = "models/embedding-001")
     
@@ -77,7 +72,6 @@ def user_input(user_question):
 
     print(response)
     st.write("Reply: ", response["output_text"])
-
 
 
 
