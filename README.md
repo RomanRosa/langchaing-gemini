@@ -104,3 +104,37 @@ To interact with the ChatBot, simply navigate to the Streamlit web interface, in
 - OpenAI 🤖
 - Streamlit 🖥️
 - Dotenv for Environment Variable Management 🔑
+
+# 4.-Advanced Document Query and Answer System Using Pinecone 📖🔍
+
+## Overview
+This project presents a sophisticated system for querying and retrieving answers from documents. It leverages LangChain for natural language processing, Pinecone for vector search capabilities, and OpenAI embeddings. The system is capable of reading documents, chunking them into manageable pieces, embedding them using OpenAI, and then using Pinecone for efficient vector-based search. It's ideal for extracting specific information from large documents or datasets.
+
+## Features
+- **Document Processing**: Uses LangChain's PyPDFDirectoryLoader to read and process PDF documents. 📚
+- **Chunking Documents**: Implements RecursiveCharacterTextSplitter for efficient text chunking. 🧩
+- **OpenAI Embeddings**: Leverages OpenAI's embeddings for transforming text into vectors. 🧠
+- **Pinecone Vector Search**: Utilizes Pinecone for efficient vector-based search and retrieval. 🔎
+- **Streamlined Query System**: Provides a user-friendly interface for querying and retrieving specific information from documents. 💻
+
+## How It Works
+1. **Reading and Processing Documents**:
+   - Utilizes PyPDFDirectoryLoader to read PDF documents and extract text. 📄
+   - Processes extracted text for further analysis.
+
+2. **Text Chunking**:
+   - Splits the document text into smaller chunks for better manageability. 🧩
+
+3. **Embedding and Vector Search**:
+   - Transforms text chunks into vector representations using OpenAI embeddings. 🌐
+   - Stores and retrieves these vectors using Pinecone for efficient searching.
+
+4. **Retrieving Answers**:
+   - Users can input queries related to the document content. ❓
+   - The system retrieves the most relevant sections of text as answers. 📑
+
+## Technologies Used
+- LangChain 🧬
+- OpenAI 🤖
+- Pinecone Vector Search 🔎
+- Python 🐍
