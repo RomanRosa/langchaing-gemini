@@ -11,3 +11,7 @@ huggingface_hub
 tiktoken
 cassio
 datasets
+sentence-transformers
+uvicorn
+ctransformers
+python-box
