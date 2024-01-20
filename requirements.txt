@@ -15,3 +15,8 @@ sentence-transformers
 uvicorn
 ctransformers
 python-box
+unstructured
+pinecone-client
+pypdf
+pandas
+numpy
